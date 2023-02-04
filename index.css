@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Poppin-Bold";
+    src: url(Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "Poppin-Medium";
+    src: url(Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "Poppin-Regular";
+    src: url(Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "EBGaramond-Italic";
+    src: url(EBGaramond-MediumItalic.ttf);
+}
+@keyframes slideDown {
+    0% {transform: translateY(-100%);}
+    100% {transform: translateY(0%);}
+}
+.homepage-img{
+    position: relative;
+    width: 28%;
+    float: right;
+    top: 25px;
+    right: 130px;
+    height: 350px;
+}
+.quote{
+    font-size: 2rem;
+    position: relative;
+    padding: 36px;
+    font-family: cursive;
+    top: 69px;
+    text-align: justify;
+    width: 800px;
+}
+.head-box{
+    width: 300px;
+    height: 60px;
+    position: relative;
+    background-color: lightpink;
+    left: 40%;
+    top: 180px;
+    z-index: 2;
+    border-radius: 5px;
+}
+.category-head{
+    position: relative;
+    font-size: 2rem;
+    font-family: 'Poppin-Medium';
+    text-align: center;
+    top: 5px;
+}
+.category-box{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-color: #ec4772;
+    top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.branch-box{
+    position: relative;
+    background-color: lightpink;
+    border-radius: 15px;
+    width: 200px;
+    height: 220px;
+    box-shadow: 2px 2px 15px -4px black;
+    cursor: pointer;
+}
+.branch-box:hover{
+    box-shadow: 2px 2px 15px 2px black;
+}
+.branch-box-anchor{
+    text-decoration: none;
+    color:black;
+    position: relative;
+    top: 90px;
+    height: 220px;
+}
+.branch-box-anchor:hover{
+    top: 85px;
+}
+.branch-text{
+    position: relative;
+    font-size: 1.5rem;
+    font-family: 'Poppin-Medium';
+    text-align: center;
+    top: 5px;
+}
+.branch-img{
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 160px;
+    border-bottom: 2px solid;
+    background-color: white;
+}
+.login-button{
+    width: 245px;
+    background: #ec4772;
+    margin-top: 14px;
+    margin-left: 983px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Poppin-Medium';
+    cursor: pointer;
+    height: 55px;
+}

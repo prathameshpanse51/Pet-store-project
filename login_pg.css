@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "poppin_regular";
+    src: url(Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "poppin_medium";
+    src: url(Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "poppin_bold";
+    src: url(Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "poppin_thin";
+    src: url(Poppins-Thin.ttf);
+}
+@keyframes slide {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+.outer{
+    background-color: lightpink;
+    width: 100vw;
+    height: 100vh;
+}
+.inner-box{
+    width: 68%;
+    height: 75%;
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px 2px #888888;
+    background-color: white;
+    position: relative;
+    margin: auto;
+    top: 10%;
+    display: flex;
+}
+.box{
+    margin: 0%;
+    padding: 0%;
+    width: 510px;
+    background-color: #ec4772;
+    position: relative;
+    top: 0px;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 1;
+}
+#head{
+    font-family: 'poppin_bold';
+    font-size: 39px;
+    position: relative;
+    left: 0px;
+    top: 50px;
+    color: white;
+    text-align: center;
+}
+#button1{
+    width: 80%;
+    height: 42px;
+    font-size: 23px;
+    font-family: 'poppin_medium';
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    top: 90px;
+    left: 52px;
+    color: black;
+    background: lightpink;
+    cursor: pointer;
+}
+#button1:hover{
+    background-color: pink;
+}
+#or{
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    top: 171px;
+    color: white;
+}
+#not{
+    font-size: 15px;
+    font-family: 'poppin_regular';
+    position: relative;
+    text-align: center;
+    top: 178px;
+    color: white;
+}
+input[id=username]{
+    position: relative;
+    width: 80%;
+    margin: 25px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 20px;
+    top: 26px;
+    left: 24px;
+    font-family: 'poppin_medium';
+    background-color: #ec4772;
+    color: white;
+}
+input[id=pass]{
+    position: relative;
+    width: 80%;
+    margin: 25px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 20px;
+    top: 26px;
+    left: 24px;
+    font-family: 'poppin_medium';
+    background-color: #ec4772;
+    color: white;
+}
+label{
+    position: relative;
+    top: 40px;
+    margin: 50px;
+    color: white;
+    font-family: 'poppin_regular';
+    font-weight: bold;
+}
+#forgot{
+    font-family: 'poppin_regular';
+    font-size: 18px;
+    position: absolute;
+    left: 35%;
+    bottom: 175px;
+    color: white;
+}
+.form{
+    margin-top: 30px;
+}
+#forgot:hover{
+    color:black;
+}
+.existing{
+    font-family: 'poppin_medium';
+    font-size: 17px;
+    position: relative;
+    left: 27%;
+    top: 20%;
+    color: white;
+}
+.reg_btn{
+    font-family: 'poppin_medium';
+    font-size: 17px;
+    position: relative;
+    left: 63%;
+    top: 82px;
+    color: white;
+    text-decoration: none;
+}
+.reg_btn:hover{
+    color: black;
+}
+.logo{
+    width: 400px;
+    position: relative;
+    top: 10%;
+    left: 13%;
+    z-index: 0;
+}
+.image-box{
+    width: 53%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 2px solid;
+    z-index: 2;
+    background: white;
+}
+.limsys_logo{
+    width: 100px;
+    position: relative;
+    top: -17%;
+    z-index: 2;
+    left: 130px;
+}
+.username_logo{
+    width: 40px;
+    position: relative;
+    top: 20.5%;
+    left: 46px;
+    z-index: 2;
+}
+.pass_logo{
+    width: 30px;
+    position: relative;
+    top: 39.5%;
+    left: 10px;
+    z-index: 2;
+}
+.social-logo{
+    text-align: center;
+    margin-top: 17%;
+    display: flex;
+}
+.insta-logo{
+    width:60px;
+    background-color:white;
+    border-radius:50%;
+    border:4px solid white;
+    position:relative;
+    right:10%;
+    cursor: pointer;
+    left: 120px;
+    box-shadow: 1px 1px 6px 2px grey;
+}
+.twitter-logo{
+    width:60px;
+    background-color:white;
+    border-radius:50%;
+    border:4px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 165px;
+    box-shadow: 1px 1px 6px 2px grey
+}
+.facebook-logo{
+    width:60px;
+    background-color:white;
+    border-radius:50%;
+    position:relative;
+    border:4px solid white;
+    left:220px;
+    cursor: pointer;
+    box-shadow: 1px 1px 6px 2px grey
+}
+.insta-logo:hover{
+    bottom: 10px;
+    box-shadow: 0px 10px 10px #2a2a2a;
+}
+.facebook-logo:hover{
+    bottom: 10px;
+    box-shadow: 0px 10px 10px #2a2a2a;
+}
+.twitter-logo:hover{
+    bottom: 10px;
+    box-shadow: 0px 10px 10px #2a2a2a;
+}
+.forgot-box{
+    margin: 0%;
+    padding: 0%;
+    width: 540px;
+    background-color: #ec4772;
+    position: relative;
+    top: 0px;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 1;
+}
+
+
+#button2{
+    width: 80%;
+    height: 42px;
+    font-size: 23px;
+    font-family: 'poppin_medium';
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    top: 90px;
+    left: 52px;
+    color: black;
+    background: lightpink;
+    cursor: pointer;
+}
+#button2:hover{
+    background-color: pink;
+}
+input[id=mnum]{
+    position: relative;
+    width: 80%;
+    margin: 25px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 20px;
+    top: 62px;
+    left: 24px;
+    font-family: 'poppin_medium';
+    background-color: #ec4772;
+    color: white;
+}
+.no{
+    position: relative;
+    top: 80px;
+    color: white;
+    font-family: 'poppin_regular';
+    font-weight: bold;
+}
+.forgot-existing{
+    font-family: 'poppin_medium';
+    font-size: 17px;
+    position: relative;
+    left: 22%;
+    top: 20%;
+    color: white;
+}
+.for_btn{
+    font-family: 'poppin_medium';
+    font-size: 17px;
+    position: relative;
+    left: 64%;
+    top: 82px;
+    color: white;
+    text-decoration: none;
+}
+.for_btn:hover{
+    color: black;
+}

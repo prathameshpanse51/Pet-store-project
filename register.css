@@ -1,0 +1,178 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@font-face {
+    font-family: "poppin_regular";
+    src: url(Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "poppin_medium";
+    src: url(Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "poppin_bold";
+    src: url(Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "poppin_thin";
+    src: url(Poppins-Thin.ttf);
+}
+body{
+    margin: 0%;
+    padding: 0px 0px 50px 0px;
+    overflow: hidden;
+    background-color: lightpink;
+}
+.reg-bg{
+    width: 100vw;
+    height: 125vh;
+    position: absolute;
+    z-index: -1;
+    bottom: -13%;
+}
+.box{
+    margin: 0%;
+    padding: 0%;
+    width: 500px;
+    height: 570px;
+    background-color: #ec4772;
+    position: relative;
+    left: 34%;
+    top: 80px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 20px 2px #888888;
+}
+#head{
+    font-family: 'poppin_bold';
+    font-size: 39px;
+    position: relative;
+    left: 0px;
+    top: 17px;
+    color: white;
+    text-align: center;
+}
+#button2{
+    width: 80%;
+    height: 50px;
+    font-size: 23px;
+    font-family: 'poppin_medium';
+    border-radius: 10px;
+    color: black;
+    position: absolute;
+    text-align: center;
+    left: 52px; 
+    margin-top: 52%;
+    background-color: lightpink;
+}
+#button2:hover{
+    background-color: pink;
+}
+input[id=pass]{
+    position:absolute;
+    width: 80%;
+    margin: 25px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 20px;
+    top: 350px;
+    left: 24px;
+    font-family: 'poppin_medium';
+    background-color:#ec4772;
+    color: white;
+}
+input[id=name]{
+    position:absolute;
+    width: 80%;
+    margin: 25px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 20px;
+    top: 97px;
+    left: 24px;
+    font-family: 'poppin_medium';
+    background-color:#ec4772;
+    color: white;
+}
+input[id=email]{
+    position:absolute;
+    width: 80%;
+    margin: 25px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 20px;
+    top: 182px;
+    left: 24px;
+    font-family: 'poppin_medium';
+    background-color:#ec4772;
+    color: white;
+}
+input[id=m_number]{
+    position:absolute;
+    width: 80%;
+    margin: 25px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 20px;
+    top: 263px;
+    left: 24px;
+    font-family: 'poppin_medium';
+    background-color:#ec4772;
+    color: white;
+}
+label[id=ps]{
+    position:absolute;
+    top: 290px;
+    margin: 48px;
+    color: white;
+    font-family: 'poppin_regular';
+    font-size: 20px;
+}
+label[id=sn]{
+    position:absolute;
+    top: 38px;
+    margin: 48px;
+    color: white;
+    font-family: 'poppin_regular';
+    font-size: 20px;
+}
+label[id=mi]{
+    position:absolute;
+    top: 122px;
+    margin: 48px;
+    color: white;
+    font-family: 'poppin_regular';
+    font-size: 20px;
+}
+label[id=mn]{
+    position:absolute;
+    top: 204px;
+    margin: 48px;
+    color: white;
+    font-family: 'poppin_regular';
+    font-size: 20px;
+}
+.existing{
+    font-family: 'poppin_medium';
+    font-size: 17px;
+    position: relative;
+    left: 22%;
+    top: 59%;
+    color: white;
+}
+.for_btn{
+    font-family: 'poppin_medium';
+    font-size: 17px;
+    position: relative;
+    left: 65%;
+    top: 54.6%;
+    color: white;
+    text-decoration: none;
+}
+.for_btn:hover{
+    color: black;
+}
