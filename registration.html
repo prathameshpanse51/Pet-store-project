@@ -1,77 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Register</title>
   <script>
-    function validateForm(){
-      var MemberId=document.RegForm.MemberId.value;
-      var Password=document.RegForm.Password.value;
-      var StudentName=document.RegForm.StudentName.value;
-      var EmailId=document.RegForm.EmailId.value;
-      var MobileNumber=document.RegForm.MobileNumber.value;
-      var Class=document.RegForm.Class.value;
-      var Gender=document.RegForm.Gender.value;
+    function validateForm() {
+
+      var Password = document.RegForm.Password.value;
+      var StudentName = document.RegForm.StudentName.value;
+      var EmailId = document.RegForm.EmailId.value;
+      var MobileNumber = document.RegForm.MobileNumber.value;
       var format1 = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
       var format2 = /[abcdefghijklmnopqrstuvwzyzABCDEFGHIJKLMNOPQRSTUVWXYZ]+/;
       var format3 = /[1234567890]+/;
 
-      if (MemberId == ""){
-        alert("Enter Member ID");
-        return false;
-      }
-      if (Password == ""){
+
+      if (Password == "") {
         alert("Enter Password");
         return false;
       }
-      if (Password !=""){
-        if(format1.test(Password)==false){
+      if (Password != "") {
+        if (format1.test(Password) == false) {
           alert("Please Enter Numbers,Characters,Special Symbols (@,#,_)");
           return false;
         }
-        if(format2.test(Password)==false){
+        if (format2.test(Password) == false) {
           alert("Please Enter Numbers,Characters,Special Symbols (@,#,_)");
           return false;
-        } 
-        if(format3.test(Password)==false){
+        }
+        if (format3.test(Password) == false) {
           alert("Please Enter Numbers,Characters,Special Symbols (@,#,_)");
           return false;
-        } 
+        }
       }
-      if (StudentName == ""){
+      if (StudentName == "") {
         alert("Enter Student Name");
         return false;
       }
-      if (EmailId == ""){
+      if (EmailId == "") {
         alert("Enter Email ID");
         return false;
       }
-      if (MobileNumber.length !=10){
+      if (MobileNumber.length != 10) {
         alert("Invalid Mobile Number");
         return false;
       }
-      else{
+      else {
         return true;
       }
     }
   </script>
 </head>
 <link rel="stylesheet" href="register.css">
-<body>   
-    <div class="box">
-        <h1 id="head">Register</h1>
-        <form name="RegForm" action="" onsubmit="return validateForm()" method="post">
-            <label for="name" id="sn">Name</label><br>
-            <input type="text" name="StudentName" id="name"><br>
-            <label for="email" id="mi">Email Id</label><br>
-            <input type="text" name="EmailId" id="email"><br>
-            <label for="m_number" id="mn">Mobile Number</label><br>
-            <input type="number" name="MobileNumber" id="m_number"><br>
-            <label for="pass" id="ps">Password</label><br>
-            <input type="password" name="Password" id="pass">
-            <input type="submit" value="REGISTER" id="button2">
-        </form>
-        <p class="existing">Already an existing user?</p>
-        <a href="login.html" class="for_btn">Login</a>
-    </div>
+
+<body>
+  <div class="box">
+    <h1 id="head">Register</h1>
+    <form name="RegForm" action="" onsubmit="return validateForm()" method="post">
+      <label for="name" id="sn">Name</label><br>
+      <input type="text" name="StudentName" id="name"><br>
+      <label for="email" id="mi">Email Id</label><br>
+      <input type="text" name="EmailId" id="email"><br>
+      <label for="m_number" id="mn">Mobile Number</label><br>
+      <input type="number" name="MobileNumber" id="m_number"><br>
+      <label for="pass" id="ps">Password</label><br>
+      <input type="password" name="Password" id="pass">
+      <input type="submit" value="REGISTER" id="button2">
+    </form>
+    <p class="existing">Already an existing user?</p>
+    <a href="login.html" class="for_btn">Login</a>
+  </div>
 </body>
+
 </html>
