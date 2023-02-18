@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Poppin-Bold";
+    src: url(Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "Poppin-Medium";
+    src: url(Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "Poppin-Regular";
+    src: url(Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "EBGaramond-Italic";
+    src: url(EBGaramond-MediumItalic.ttf);
+}
+@keyframes slideDown {
+    0% {transform: translateY(-100%);}
+    100% {transform: translateY(0%);}
+}
+.category-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #fff0f3;
+    margin-top: -52px;
+
+}
+
+.branch-box-anchor{
+    /* border: 2px solid black; */
+    width: 310px;
+    height: 450px;
+    margin-bottom: 65px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    /* background-color: #ffc8dd; */
+}
+.branch-box-anchor:hover{
+    box-shadow: -1px 1px 14px 0px black;
+    transform: translateY(-0.25em);
+    background-color: #fae0e4;
+}
+
+.main-info{
+    position: relative;
+    top: 15px;
+}
+.breed-name{
+    font-size: 27px;
+    font-family: 'Poppin-Bold';
+}
+.breed-name:hover{
+    color: #ff87ab;
+}
+.breed-info{
+    font-size: 15px;
+    font-family: 'Poppin-Medium';
+    word-spacing: 3px;
+}
+.breed-info:hover{
+    color: #ff87ab;
+
+}
+.breed-info2{
+    font-family: 'Poppin-bold';
+    font-size: 20px;
+    position: relative;
+    top: 13px;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+}
+.breed-info2:hover{
+    color: #ff87ab;
+
+}
+.breed-group{
+    position: relative;
+    right: 4px;
+}
+.branch-img{
+    border-bottom: 2px solid;
+    width: 310px;
+    height: 230px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.head-box{
+    position: relative;
+    font-family: 'Poppin-Bold';
+    font-size: 49px;
+    letter-spacing: -2px;
+}
+.category-name{
+    background: #ec4772;
+    position: relative;
+    width: 260px;
+    height: 69px;
+    bottom: 18px;
+    left: 621px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.page-through{
+    font-family: 'Poppin-medium';
+    font-size: 39px;
+    position: relative;
+    top: 4px;
+    left: 20px;
+    word-spacing: 12px;
+    width: 350px;;
+}
+.breed-homepage, .breed-page{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -69,8 +69,10 @@
     position: relative;
     background-color: lightpink;
     border-radius: 15px;
-    width: 200px;
-    height: 220px;
+    /* width: 200px;
+    height: 220px; */
+    width: 275px;
+    height: 260px;
     box-shadow: 2px 2px 15px -4px black;
     cursor: pointer;
 }
@@ -81,16 +83,16 @@
     text-decoration: none;
     color:black;
     position: relative;
-    top: 90px;
+    top: 69px;
     height: 220px;
 }
 .branch-box-anchor:hover{
-    top: 85px;
+    top: 63px;
 }
 .branch-text{
     position: relative;
     font-size: 1.5rem;
-    font-family: 'Poppin-Medium';
+    font-family: 'Poppin-bold';
     text-align: center;
     top: 5px;
 }
@@ -99,7 +101,8 @@
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    height: 160px;
+    /* height: 160px; */
+    height: 204px;
     border-bottom: 2px solid;
     background-color: white;
 }

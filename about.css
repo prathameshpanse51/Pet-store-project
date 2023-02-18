@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "poppin_regular";
+    src: url(Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "poppin_medium";
+    src: url(Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "poppin_bold";
+    src: url(Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "poppin_thin";
+    src: url(Poppins-Thin.ttf);
+}
+@keyframes slide {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+
+.about-img{
+    position: relative;
+    width: 656px;
+    top: 46px;
+    height: 433px;
+    left: 36px;
+}
+.info{
+    position: relative;
+    left: 759px;
+    bottom: 394px;
+    font-size: 27px;
+    width: 610px;
+    text-align: justify;
+}
+.info-2{
+    margin-bottom: 4px;
+    margin-top: 16px;
+    line-height: 47px;
+    color: #cdb4db;
+}
+.info-3{
+    line-height: 54px;
+    position: relative;
+    left: 25px;
+    font-size: 25px;
+    color: #a2d2ff;
+}
+.mid-box{
+    height: 568px;
+}
