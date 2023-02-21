@@ -28,7 +28,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #fff0f3;
-    margin-top: -52px;
+    margin-top: -69px;
 
 }
 
@@ -41,9 +41,10 @@
     border-radius: 10px;
     cursor: pointer;
     /* background-color: #ffc8dd; */
+    box-shadow: 0px 0px 9px 0px darkgray;
 }
 .branch-box-anchor:hover{
-    box-shadow: -1px 1px 14px 0px black;
+    box-shadow: 0px 0px 14px 0px black;
     transform: translateY(-0.25em);
     background-color: #fae0e4;
 }
@@ -94,12 +95,11 @@
 
 .head-box{
     position: relative;
-    font-family: 'Poppin-Bold';
+    font-family: 'Poppin-medium';
     font-size: 49px;
     letter-spacing: -2px;
 }
 .category-name{
-    background: #ec4772;
     position: relative;
     width: 260px;
     height: 69px;
@@ -107,19 +107,21 @@
     left: 621px;
     text-align: center;
     border-radius: 15px;
+    top: 10px;
+    text-decoration: underline;
 }
 
 .page-through{
-    font-family: 'Poppin-medium';
-    font-size: 39px;
-    position: relative;
-    top: 4px;
-    left: 20px;
+    font-family: cursive;
+    font-size: 24px;
     word-spacing: 12px;
-    width: 350px;;
+    width: 97.5vw;
+    background-color: black;
+    padding: 8px;
+    padding-left: 33px;
 }
 .breed-homepage, .breed-page{
-    color: black;
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }
