@@ -16,6 +16,17 @@
             alert("Invalid Credentials")
             return false;
         }
+        // function validateForm() {
+        //     var EmailId = document.LogForm.emailid.value;
+        //     var Password = document.LogForm.pass.value;
+        //     if (EmailId == null || Emailid == "") {
+        //         alert("Email can't be blank");
+        //         return false;
+        //     } else if (Password.length < 6) {
+        //         alert("Password must be at least 6 characters long.");
+        //         return false;
+        //     }
+
     </script>
 </head>
 <link rel="stylesheet" href="login_pg.css">
@@ -41,7 +52,7 @@
                 <h1 id="head">Login</h1>
                 <form action="homepage.html" name="LogForm" class="form" onsubmit="return login()">
                     <label for="emailid">Email Id</label><br>
-                    <input type="text" name="emailid" id="username" required><br>
+                    <input type="text" name="emailid" id="Emailid" required><br>
                     <label for="pass">Password</label><br>
                     <input type="password" name="pass" id="pass" required>
                     <input type="submit" value="LOGIN" id="button1">

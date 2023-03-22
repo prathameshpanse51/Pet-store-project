@@ -41,7 +41,7 @@
     border-radius: 10px;
     cursor: pointer;
     /* background-color: #ffc8dd; */
-    box-shadow: 0px 0px 9px 0px darkgray;
+    box-shadow: 0px 0px 3px 1px darkgray;
 }
 .branch-box-anchor:hover{
     box-shadow: 0px 0px 14px 0px black;
@@ -115,7 +115,7 @@
     font-family: cursive;
     font-size: 24px;
     word-spacing: 12px;
-    width: 97.5vw;
+    width: 96.2vw;
     background-color: black;
     padding: 8px;
     padding-left: 33px;
