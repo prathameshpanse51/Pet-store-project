@@ -28,7 +28,7 @@
                     <input type="submit" value="Send OTP" id="button2">
                 </form>
                 <p class="forgot-existing">Already an existing user?</p>
-                <a href="login.html" class="for_btn">Login</a>
+                <a href="login.php" class="for_btn">Login</a>
             </div>
         </div>
     </div>

@@ -8,11 +8,11 @@
     <title>Homepage</title>
     <script>
         function login() {
-            location.href = "login.html";
+            location.href = "login.php";
         }
     </script>
 </head>
-<link rel="stylesheet" href="profile.css">
+<link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="universal.css">
 
 <body>
@@ -21,34 +21,64 @@
             <img src="https://www.shutterstock.com/image-vector/pet-shop-logo-template-260nw-1053368123.jpg" alt=""
                 class="PetShop_logo">
             <h1 class="nav-name">PetShop</h1>
-            <form action="" method="POST" name="searchInput">
-                <input type="text" placeholder="Search" class="search-bar" name="search" id="search">
-                <button class="form-button">
-                    <div class="search-btn">
-                        <img src="search-icon.png" alt="" class="search-icon">
-                    </div>
-                </button>
-            </form>
+            <button class="login-button" onclick="login()">Login</button>
         </div>
         <div class="nav2">
             <div class="nav-tabs">
-                <a class="tab" href="homepage.html">HOME</a>
-                <a class="tab" href="profile.html" style="color: black;font-weight:600">PROFILE</a>
-                <a class="tab" href="about.html">ABOUT</a>
+                <a class="tab" href="homepage.php" style="color: black;font-weight:600">HOME</a>
+                <a class="tab" href="login.php">PROFILE</a>
+                <a class="tab" href="login.php">ABOUT</a>
             </div>
         </div>
     </div>
-    <div class="box">
-        <img src="https://ui-avatars.com/api/?background=ffc556&name=Prathamesh Panse" class="name-logo">
-        <h1 id="n1">Name</h1>
-        <p id="n2">Prathamesh Panse</p>
-        <h1 id="g1">Email Id</h1>
-        <p id="g2">prathameshpanse@gmail.com</p>
-        <h1 id="c1">Member Id</h1>
-        <p id="c2">2021PE3375</p>
-        <h1 id="m1">Mobile Number</h1>
-        <p id="m2">1234567890</p>
-        <a href="/index.html"><button class="btn"> Logout</button></a>
+    <div class="mid-box">
+        <img src="petshop.jpg" alt="" class="homepage-img">
+        <p class="quote">If having a soul means being able to feel love and loyalty and gratitude, then animals are
+            better off than a lot of humans.</p>
+    </div>
+    <div class="head-box">
+        <p class="category-head">Category</p>
+    </div>
+    <div class="category-box">
+        <a href="login.php" class="branch-box-anchor">
+            <div class="branch-box">
+                <img src="dog.jpg" alt="" class="branch-img">
+                <p class="branch-text">Dog</p>
+            </div>
+        </a>
+        <a href="login.php" class="branch-box-anchor">
+            <div class="branch-box">
+                <img src="https://cdn.shopify.com/s/files/1/0812/5745/products/cat_2.9x3.0_700x700.jpg?v=1608058269"
+                    alt="" class="branch-img">
+                <p class="branch-text">Cat</p>
+            </div>
+        </a>
+        <!-- <a href="login.php" class="branch-box-anchor">
+            <div class="branch-box">
+                <img src="https://www.pickastick.in/wp-content/uploads/2021/11/parrot_L2.png" alt="" class="branch-img">
+                <p class="branch-text">Parrot</p>
+            </div>
+        </a>
+        <a href="login.php" class="branch-box-anchor">
+            <div class="branch-box">
+                <img src="rabbit.jpg" alt="" class="branch-img">
+                <p class="branch-text">Rabit</p>
+            </div>
+        </a> -->
+        <a href="login.php" class="branch-box-anchor">
+            <div class="branch-box">
+                <img src="https://ii1.pepperfry.com/media/catalog/product/w/a/800x880/wall-stickers-blue-love-birds--6424-wall-stickers-blue-love-birds--6424-toizy6.jpg"
+                    alt="" class="branch-img">
+                <p class="branch-text">Love Birds</p>
+            </div>
+        </a>
+        <a href="login.php" class="branch-box-anchor">
+            <div class="branch-box">
+                <img src="https://img.freepik.com/premium-vector/set-items-pet-shop_24877-60841.jpg?w=740" alt=""
+                    class="branch-img">
+                <p class="branch-text">Pet Food</p>
+            </div>
+        </a>
     </div>
     <div class="footer">
         <div class="foo1">
@@ -98,6 +128,7 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </div>
+
 </body>
 
 </html>

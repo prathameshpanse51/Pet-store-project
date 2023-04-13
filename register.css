@@ -35,7 +35,7 @@ body{
     margin: 0%;
     padding: 0%;
     width: 500px;
-    height: 570px;
+    height: 600px;
     background-color: #ec4772;
     position: relative;
     left: 34%;
@@ -76,7 +76,7 @@ input[id=pass]{
     border-bottom: 2px solid white;
     outline: none;
     font-size: 20px;
-    top: 350px;
+    top: 340px;
     left: 24px;
     font-family: 'poppin_medium';
     background-color:#ec4772;
@@ -124,9 +124,31 @@ input[id=m_number]{
     background-color:#ec4772;
     color: white;
 }
+input[id=add]{
+    position:absolute;
+    width: 80%;
+    margin: 25px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 20px;
+    top: 415px;
+    left: 24px;
+    font-family: 'poppin_medium';
+    background-color:#ec4772;
+    color: white;
+}
 label[id=ps]{
     position:absolute;
     top: 290px;
+    margin: 48px;
+    color: white;
+    font-family: 'poppin_regular';
+    font-size: 20px;
+}
+label[id=address]{
+    position:absolute;
+    top: 360px;
     margin: 48px;
     color: white;
     font-family: 'poppin_regular';
@@ -161,7 +183,7 @@ label[id=mn]{
     font-size: 17px;
     position: relative;
     left: 22%;
-    top: 59%;
+    top: 53%;
     color: white;
 }
 .for_btn{
@@ -169,7 +191,7 @@ label[id=mn]{
     font-size: 17px;
     position: relative;
     left: 65%;
-    top: 54.6%;
+    top: 49%;
     color: white;
     text-decoration: none;
 }

@@ -1,3 +1,19 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database="petshop";
+
+$conn = new mysqli($servername, $username, $password,$database);
+
+session_start();
+if(isset($_POST['name'])){
+  $sql = 'INSERT INTO `user_info` VALUES ("'.$_POST['name'].'","'.password_hash($_POST['pass'],PASSWORD_DEFAULT).'","'.$_POST['email'].'","'.$_POST['m_number'].'","'.$_POST['address'].'");';
+  $conn->query($sql);
+  $_SESSION['email']=$_POST['email'];
+  echo '<script>window.location.href="homepage.php";</script>';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,19 +72,21 @@
 <body>
   <div class="box">
     <h1 id="head">Register</h1>
-    <form name="RegForm" action="" onsubmit="return validateForm()" method="post">
+    <form name="RegForm" action="registration.php" onsubmit="return validateForm()" method="POST">
       <label for="name" id="sn">Name</label><br>
-      <input type="text" name="StudentName" id="name"><br>
+      <input type="text" name="name" id="name"><br>
       <label for="email" id="mi">Email Id</label><br>
-      <input type="text" name="EmailId" id="email"><br>
+      <input type="text" name="email" id="email"><br>
       <label for="m_number" id="mn">Mobile Number</label><br>
-      <input type="number" name="MobileNumber" id="m_number"><br>
+      <input type="text" name="m_number" id="m_number"><br>
       <label for="pass" id="ps">Password</label><br>
-      <input type="password" name="Password" id="pass">
-      <input type="submit" value="REGISTER" id="button2">
+      <input type="password" name="pass" id="pass"><br>
+      <label for="address" id="address">Address</label><br>
+      <input type="text" name="address" id="add"><br>
+      <input type="submit" value="REGISTER" id="button2" style="cursor: pointer;">
     </form>
     <p class="existing">Already an existing user?</p>
-    <a href="login.html" class="for_btn">Login</a>
+    <a href="login.php" class="for_btn">Login</a>
   </div>
 </body>
 

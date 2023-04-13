@@ -8,7 +8,7 @@
     <title>Homepage</title>
     <script>
         function login() {
-            location.href = "login.html";
+            location.href = "login.php";
         }
     </script>
 </head>
@@ -21,13 +21,22 @@
             <img src="https://www.shutterstock.com/image-vector/pet-shop-logo-template-260nw-1053368123.jpg" alt=""
                 class="PetShop_logo">
             <h1 class="nav-name">PetShop</h1>
-            <button class="login-button" onclick="login()">Login</button>
+            <form action="search.php" method="POST" name="searchInput">
+                <input type="text" placeholder="Search" class="search-bar" name="search" id="search">
+                <button class="form-button">
+                    <div class="search-btn">
+                        <img src="search-icon.png" alt="" class="search-icon">
+                    </div>
+                </button>
+            </form>
         </div>
         <div class="nav2">
             <div class="nav-tabs">
-                <a class="tab" href="homepage.html" style="color: black;font-weight:600">HOME</a>
-                <a class="tab" href="login.html">PROFILE</a>
-                <a class="tab" href="login.html">ABOUT</a>
+                <a class="tab" href="homepage.php" style="color: black;font-weight:600">HOME</a>
+                <a class="tab" href="profile.php">PROFILE</a>
+                <a class="tab" href="about.php">ABOUT</a>
+                <a class="tab" href="cart.php">MY CART</a>
+                <a class="tab" href="orders.php">MY ORDERS</a>
             </div>
         </div>
     </div>
@@ -40,39 +49,40 @@
         <p class="category-head">Category</p>
     </div>
     <div class="category-box">
-        <a href="login.html" class="branch-box-anchor">
+        <a class="branch-box-anchor" href="dog.php">
             <div class="branch-box">
-                <img src="dog.jpg" alt="" class="branch-img">
+                <img src="https://image.spreadshirtmedia.com/image-server/v1/mp/products/T1459A839PA3861PT28D1028593179W10000H10000/views/1,width=1200,height=630,appearanceId=839,backgroundColor=F2F2F2/cute-adorable-kawaii-puppy-dog-sticker.jpg"
+                    alt="" class="branch-img">
                 <p class="branch-text">Dog</p>
             </div>
         </a>
-        <a href="login.html" class="branch-box-anchor">
+        <a class="branch-box-anchor" href="cats.php">
             <div class="branch-box">
                 <img src="https://cdn.shopify.com/s/files/1/0812/5745/products/cat_2.9x3.0_700x700.jpg?v=1608058269"
                     alt="" class="branch-img">
                 <p class="branch-text">Cat</p>
             </div>
         </a>
-        <!-- <a href="login.html" class="branch-box-anchor">
+        <!-- <a class="branch-box-anchor">
             <div class="branch-box">
                 <img src="https://www.pickastick.in/wp-content/uploads/2021/11/parrot_L2.png" alt="" class="branch-img">
                 <p class="branch-text">Parrot</p>
             </div>
         </a>
-        <a href="login.html" class="branch-box-anchor">
+        <a class="branch-box-anchor">
             <div class="branch-box">
                 <img src="rabbit.jpg" alt="" class="branch-img">
                 <p class="branch-text">Rabit</p>
             </div>
         </a> -->
-        <a href="login.html" class="branch-box-anchor">
+        <a class="branch-box-anchor" href="lovebirds.php">
             <div class="branch-box">
                 <img src="https://ii1.pepperfry.com/media/catalog/product/w/a/800x880/wall-stickers-blue-love-birds--6424-wall-stickers-blue-love-birds--6424-toizy6.jpg"
                     alt="" class="branch-img">
                 <p class="branch-text">Love Birds</p>
             </div>
         </a>
-        <a href="login.html" class="branch-box-anchor">
+        <a class="branch-box-anchor" href="petfood.php">
             <div class="branch-box">
                 <img src="https://img.freepik.com/premium-vector/set-items-pet-shop_24877-60841.jpg?w=740" alt=""
                     class="branch-img">
@@ -128,7 +138,6 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </div>
-
 </body>
 
 </html>

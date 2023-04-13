@@ -1,33 +1,34 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database="petshop";
+
+$conn = new mysqli($servername, $username, $password,$database);
+
+session_start();
+if(isset($_POST['email'])){
+  $sql = 'SELECT password FROM user_info WHERE email_id="'.$_POST['email'].'";';
+  $r1=$conn->query($sql);
+  $result=$r1->fetch_all();
+  if(count($result)>0){
+    if(password_verify($_POST["pass"],$result[0][0])){
+        $_SESSION['email']=$_POST['email'];
+        echo '<script>window.location.href="homepage.php";</script>';
+    }
+    else{
+        echo "<script>alert('Invalid Credentials!!')</script>";
+      }
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <script>
-        function login() {
-            var EmailId = document.LogForm.emailid.value;
-            var Password = document.LogForm.pass.value;
-            if (EmailId == "prathameshpanse@gmail.com" && Password == "6969") {
-                return true;
-            }
-            alert("Invalid Credentials")
-            return false;
-        }
-        // function validateForm() {
-        //     var EmailId = document.LogForm.emailid.value;
-        //     var Password = document.LogForm.pass.value;
-        //     if (EmailId == null || Emailid == "") {
-        //         alert("Email can't be blank");
-        //         return false;
-        //     } else if (Password.length < 6) {
-        //         alert("Password must be at least 6 characters long.");
-        //         return false;
-        //     }
-
-    </script>
 </head>
 <link rel="stylesheet" href="login_pg.css">
 
@@ -50,18 +51,18 @@
             </div>
             <div class="box">
                 <h1 id="head">Login</h1>
-                <form action="homepage.html" name="LogForm" class="form" onsubmit="return login()">
+                <form action="login.php" name="LogForm" class="form" method="POST">
                     <label for="emailid">Email Id</label><br>
-                    <input type="text" name="emailid" id="Emailid" required><br>
+                    <input type="text" name="email" id="Emailid" required><br>
                     <label for="pass">Password</label><br>
                     <input type="password" name="pass" id="pass" required>
                     <input type="submit" value="LOGIN" id="button1">
                 </form>
-                <a href='forgot.html' style="text-decoration: none">
+                <a href='forgot.php' style="text-decoration: none">
                     <h2 id="forgot">Forgot Password?</h2>
                 </a>
                 <p class="existing">Not an existing user?</p>
-                <a href="registration.html" class="reg_btn">Register</a>
+                <a href="registration.php" class="reg_btn">Register</a>
             </div>
         </div>
     </div>

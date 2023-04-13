@@ -5,23 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>About</title>
+    <link rel="website icon" type="jpg"
+        href="https://img.freepik.com/free-vector/cute-pug-dog-bite-bone-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium_138676-7370.jpg?w=740&t=st=1678242323~exp=1678242923~hmac=7496c32ceec53940367a7be716fa245f2af25b27ef5131091735444a1d324e9c">
     <script>
         function login() {
-            location.href = "login.html";
+            location.href = "login.php";
         }
     </script>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="universal.css">
 </head>
-<link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="universal.css">
 
 <body>
     <div class="navbar">
+        <!-- <a href="homepage.php"> -->
         <div class="nav1">
             <img src="https://www.shutterstock.com/image-vector/pet-shop-logo-template-260nw-1053368123.jpg" alt=""
                 class="PetShop_logo">
             <h1 class="nav-name">PetShop</h1>
-            <form action="" method="POST" name="searchInput">
+            <!-- </a> -->
+            <form action="search.php" method="POST" name="searchInput">
                 <input type="text" placeholder="Search" class="search-bar" name="search" id="search">
                 <button class="form-button">
                     <div class="search-btn">
@@ -31,63 +35,34 @@
             </form>
         </div>
         <div class="nav2">
-            <div class="nav-tabs">
-                <a class="tab" href="homepage.html" style="color: black;font-weight:600">HOME</a>
-                <a class="tab" href="profile.html">PROFILE</a>
-                <a class="tab" href="about.html">ABOUT</a>
+        <div class="nav-tabs">
+                <a class="tab" href="homepage.php">HOME</a>
+                <a class="tab" href="profile.php">PROFILE</a>
+                <a class="tab" href="about.php" style="color: black;font-weight:600">ABOUT</a>
+                <a class="tab" href="cart.php">MY CART</a>
+                <a class="tab" href="orders.php">MY ORDERS</a>
             </div>
         </div>
     </div>
+
     <div class="mid-box">
-        <img src="petshop.jpg" alt="" class="homepage-img">
-        <p class="quote">If having a soul means being able to feel love and loyalty and gratitude, then animals are
-            better off than a lot of humans.</p>
+        <img src="https://img.freepik.com/free-vector/flat-people-bathing-pets_52683-65393.jpg?w=996&t=st=1675734090~exp=1675734690~hmac=68d9ad62c9ec45871963418536b90f64a5a0a69716d83f39d02b2b83bda60f86"
+            alt="" class="about-img">
+        <div class="info">
+            <h4 class="heading-aboutUs" style="color: #a2d2ff;">About us</h4>
+            <h2 class="info-1" style="color: #ffafcc;margin-top: 16px;">We are the best for your pet care services</h2>
+            <p class="info-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, tempora reiciendis velit
+                porro id
+                recusandae
+            </p>
+            <ul>
+                <li class="info-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li class="info-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li class="info-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            </ul>
+        </div>
     </div>
-    <div class="head-box">
-        <p class="category-head">Category</p>
-    </div>
-    <div class="category-box">
-        <a class="branch-box-anchor" href="dog.html">
-            <div class="branch-box">
-                <img src="https://image.spreadshirtmedia.com/image-server/v1/mp/products/T1459A839PA3861PT28D1028593179W10000H10000/views/1,width=1200,height=630,appearanceId=839,backgroundColor=F2F2F2/cute-adorable-kawaii-puppy-dog-sticker.jpg"
-                    alt="" class="branch-img">
-                <p class="branch-text">Dog</p>
-            </div>
-        </a>
-        <a class="branch-box-anchor">
-            <div class="branch-box">
-                <img src="https://cdn.shopify.com/s/files/1/0812/5745/products/cat_2.9x3.0_700x700.jpg?v=1608058269"
-                    alt="" class="branch-img">
-                <p class="branch-text">Cat</p>
-            </div>
-        </a>
-        <!-- <a class="branch-box-anchor">
-            <div class="branch-box">
-                <img src="https://www.pickastick.in/wp-content/uploads/2021/11/parrot_L2.png" alt="" class="branch-img">
-                <p class="branch-text">Parrot</p>
-            </div>
-        </a>
-        <a class="branch-box-anchor">
-            <div class="branch-box">
-                <img src="rabbit.jpg" alt="" class="branch-img">
-                <p class="branch-text">Rabit</p>
-            </div>
-        </a> -->
-        <a class="branch-box-anchor">
-            <div class="branch-box">
-                <img src="https://ii1.pepperfry.com/media/catalog/product/w/a/800x880/wall-stickers-blue-love-birds--6424-wall-stickers-blue-love-birds--6424-toizy6.jpg"
-                    alt="" class="branch-img">
-                <p class="branch-text">Love Birds</p>
-            </div>
-        </a>
-        <a class="branch-box-anchor">
-            <div class="branch-box">
-                <img src="https://img.freepik.com/premium-vector/set-items-pet-shop_24877-60841.jpg?w=740" alt=""
-                    class="branch-img">
-                <p class="branch-text">Pet Food</p>
-            </div>
-        </a>
-    </div>
+
     <div class="footer">
         <div class="foo1">
             <img src="https://www.shutterstock.com/image-vector/pet-shop-logo-template-260nw-1053368123.jpg" alt=""
@@ -136,6 +111,7 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </div>
+
 </body>
 
 </html>

@@ -1,3 +1,17 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database="petshop";
+
+$conn = new mysqli($servername, $username, $password,$database);
+
+session_start();
+$email=$_SESSION["email"];
+
+$sql1=$conn->query("select * from user_info where email_id='".$email."';");
+$data=$sql1->fetch_all();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,27 +19,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="website icon" type="jpg"
-        href="https://img.freepik.com/free-vector/cute-pug-dog-bite-bone-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium_138676-7370.jpg?w=740&t=st=1678242323~exp=1678242923~hmac=7496c32ceec53940367a7be716fa245f2af25b27ef5131091735444a1d324e9c">
+    <title>Homepage</title>
     <script>
         function login() {
-            location.href = "login.html";
+            location.href = "login.php";
         }
     </script>
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="universal.css">
 </head>
+<link rel="stylesheet" href="profile.css">
+<link rel="stylesheet" href="universal.css">
 
 <body>
     <div class="navbar">
-        <!-- <a href="homepage.html"> -->
         <div class="nav1">
             <img src="https://www.shutterstock.com/image-vector/pet-shop-logo-template-260nw-1053368123.jpg" alt=""
                 class="PetShop_logo">
             <h1 class="nav-name">PetShop</h1>
-            <!-- </a> -->
-            <form action="" method="POST" name="searchInput">
+            <form action="search.php" method="POST" name="searchInput">
                 <input type="text" placeholder="Search" class="search-bar" name="search" id="search">
                 <button class="form-button">
                     <div class="search-btn">
@@ -36,31 +46,28 @@
         </div>
         <div class="nav2">
             <div class="nav-tabs">
-                <a class="tab" href="homepage.html">HOME</a>
-                <a class="tab" href="profile.html">PROFILE</a>
-                <a class="tab" style="color: black;font-weight:600">ABOUT</a>
+            <div class="nav-tabs">
+                <a class="tab" href="homepage.php">HOME</a>
+                <a class="tab" href="profile.php" style="color: black;font-weight:600">PROFILE</a>
+                <a class="tab" href="about.php">ABOUT</a>
+                <a class="tab" href="cart.php">MY CART</a>
+                <a class="tab" href="orders.php">MY ORDERS</a>
+            </div>
             </div>
         </div>
     </div>
-
-    <div class="mid-box">
-        <img src="https://img.freepik.com/free-vector/flat-people-bathing-pets_52683-65393.jpg?w=996&t=st=1675734090~exp=1675734690~hmac=68d9ad62c9ec45871963418536b90f64a5a0a69716d83f39d02b2b83bda60f86"
-            alt="" class="about-img">
-        <div class="info">
-            <h4 class="heading-aboutUs" style="color: #a2d2ff;">About us</h4>
-            <h2 class="info-1" style="color: #ffafcc;margin-top: 16px;">We are the best for your pet care services</h2>
-            <p class="info-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, tempora reiciendis velit
-                porro id
-                recusandae
-            </p>
-            <ul>
-                <li class="info-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                <li class="info-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                <li class="info-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            </ul>
-        </div>
+    <div class="box">
+        <img src="https://ui-avatars.com/api/?background=ffc556&name=<?php echo $data[0][0]?>" class="name-logo">
+        <h1 id="n1">Name</h1>
+        <p id="n2"><?php echo $data[0][0]?></p>
+        <h1 id="g1">Email Id</h1>
+        <p id="g2"><?php echo $data[0][2]?></p>
+        <h1 id="c1">Mobile Number</h1>
+        <p id="c2"><?php echo $data[0][3]?></p>
+        <h1 id="m1">Address</h1>
+        <p id="m2"><?php echo $data[0][4]?></p>
+        <a href="/index.php"><button class="btn"> Logout</button></a>
     </div>
-
     <div class="footer">
         <div class="foo1">
             <img src="https://www.shutterstock.com/image-vector/pet-shop-logo-template-260nw-1053368123.jpg" alt=""
@@ -109,7 +116,6 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </div>
-
 </body>
 
 </html>
